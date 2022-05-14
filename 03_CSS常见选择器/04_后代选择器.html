@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 后代 */
+    .home span {
+      color: red;
+    }
+    /* 子代 */
+    .home > span {
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="home">
+    <span>home -> span</span>
+    <div class="box">
+      <span class="home-item">home -> box -> span</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="desc">
+      <span class="home-item">content -> desc -> span</span>
+    </div>
+  </div>
+
+  <span class="home-item">span</span>
+  <div>
+    <span class="home-item">div -> span</span>
+  </div>
+</body>
+
+</html>
