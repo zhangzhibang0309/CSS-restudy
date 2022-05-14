@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      text-indent: 2em;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>标题</h1>
+  <p>
+    先计算可见区域起始数据的索引值startIndex和当前可见区域结束数据的索引值endIndex，假如元素的高度是固定的，那么startIndex的算法很简单，即startIndex =
+    Math.floor(scrollTop/itemHeight)，endIndex = startIndex + (clientHeight/itemHeight) - 1，再根据startIndex
+    和endIndex取相应范围的数据，渲染到可视区域，然后再计算startOffset（上滚动空白区域）和endOffset（下滚动空白区域），这两个偏移量的作用就是来撑开容器元素的内容，从而起到缓冲的作用，使得滚动条保持平滑滚动，并使滚动条处于一个正确的位置
+  </p>
+</body>
+
+</html>
