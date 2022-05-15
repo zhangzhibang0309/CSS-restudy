@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .before {
+      color: bisque;
+    }
+
+    .after {
+      color: aqua;
+    }
+
+    /* 伪元素 */
+    .item::before {
+      content: "321";
+      font-size: 20px;
+      color: red;
+    }
+
+    .item::after {
+      /* content: "cba"; */
+      content: url("./imgs/icon.png ");
+      color: rgb(0, 128, 60);
+      /* 但是位置不是很好看 */
+      position: relative;
+      left: 10px;
+      top: 1px;
+    }
+
+    /* 额外的补充 */
+    .box5::after {
+      /* 使用伪元素的时候 content不能省略 */
+      content: "";
+      /* 本身是inline 无法设置宽高 */
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <span class="before">123</span>
+    我是div元素
+    <span class="after">abc</span>
+  </div>
+  <div class="box2">
+    <span class="before">123</span>
+    我是div元素
+    <span class="after">abc</span>
+  </div>
+  <div class="box3 item">我是box3</div>
+  <div class="box4 item">我是box4</div>
+  <div class="box5 item">我是box4</div>
+</body>
+
+</html>
