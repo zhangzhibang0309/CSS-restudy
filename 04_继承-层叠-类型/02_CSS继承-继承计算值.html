@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        color: red;
+
+        /* 虽然在这里我们设置的是em */
+        /* 按照逻辑，box font-size是2em成了32，那么继承又是2em应该是64px */
+        /* 但是，继承的时候是继承计算值，也就还是32px */
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      box本身内容
+      <p>我是p元素</p>
+    </div>
+  </body>
+</html>
