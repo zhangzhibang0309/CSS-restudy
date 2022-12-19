@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- p元素不能包裹div元素 -->
+    <div>
+      <a href="">a</a>
+      <span>aaa</span>
+    </div>
+    <!-- 下面这样渲染会有问题 -->
+    <p>
+      123
+      <div>div</div>
+      456
+    </p>
+
+    <!-- 行内级元素不要放块级元素 -->
+    <span>
+      <div>div</div>
+    </span>
+  </body>
+</html>
