@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        /* color module */
+        /* color: #ff000000; */
+
+        /* 推荐下面写法 */
+        color: rgba(0, 0, 0, 0);
+        /* 通过背景颜色透明度 */
+        /* background-color: rgba(0, 0, 0, 0); */
+        background-color: transparent;
+      }
+
+      .box2 {
+        /* 这个会将这个元素及其子元素全部进行透明化 */
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">div</div>
+    <div class="box2">div2
+      <img src="https://catalinazzz.oss-cn-beijing.aliyuncs.com/image/20221221233208.png" alt="">
+    </div>
+  </body>
+</html>
