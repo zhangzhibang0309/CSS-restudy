@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 1000px;
+        height: 2000px;
+        background-color: #f00;
+        /* 边框圆角弧度可以这样设置 */
+        border-radius: 6px;
+        /* 但是如果设置百分比会怎样呢 */
+        /* 一个角的弧度，其实有两个 */
+        /* 一个是水平方向的弧度，一个是垂直方向弧度 */
+        /* 百分比水平方向相对于width */
+        /* 百分比垂直方向相对于height */
+        /* 所以如果宽高差异很大，使用百分比设置弧度会看起来很诡异 */
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
