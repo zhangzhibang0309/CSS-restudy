@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        background-color: #f00;
+        color: white;
+
+        /* 对于行内级元素，有一些特殊的地方 */
+        /* 宽高不生效 */
+        width: 100px;
+        height: 100px;
+
+        /* 内边距 */
+        /* 上下会被撑起来，但是不占据空间 */
+        /* padding: 50px; */
+
+        /* 边框 */
+        /* 上下会被撑起来，但是不占据空间 */
+        /* border: 50px solid #0f0; */
+
+        /* 边框 */
+        /* 上下margin不生效 */
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="content">spanspanspanspan</span>
+    <div>divdivdiv</div>
+  </body>
+</html>
