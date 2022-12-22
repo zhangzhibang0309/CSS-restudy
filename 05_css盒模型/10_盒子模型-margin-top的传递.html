@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: #f00;
+
+        overflow: auto;
+      }
+      .container {
+        width: 100px;
+        height: 100px;
+        background-color: #0f0;
+
+        /* 现在想让子元素左上距离父元素100px */
+        /* 按照下面这样设置，会发现top的margin传递了 */
+        /* 整个元素往下移动了100px */
+        /* 建议使用padding做这个需求 */
+        /* 如果说真想用margin，那么可以给父元素设置overflow：auto等让其形成一个bfc */
+        /* 或者给父元素设置boder也可以 */
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container"></div>
+    </div>
+  </body>
+</html>
